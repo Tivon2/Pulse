@@ -17,12 +17,33 @@
 		10FA4E8A2F0CAAE8002280AB /* SleepLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepLogView.swift; sourceTree = "<group>"; };
 		10FA4E8B2F0CAAF2002280AB /* MoodWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodWidget.swift; sourceTree = "<group>"; };
 		10FA4E8C2F0CAAFB002280AB /* SleepWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepWidget.swift; sourceTree = "<group>"; };
-		10FA4E8D2F0CAB04002280AB /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		10FA4E902F0CCC6F002280AB /* MoodScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodScore.swift; sourceTree = "<group>"; };
+		10FA4E912F0CCC79002280AB /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		10FA4E922F0CCC8A002280AB /* MoodScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodScoreViewModel.swift; sourceTree = "<group>"; };
+		10FA4E932F0CCCA3002280AB /* WidgetDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataViewModel.swift; sourceTree = "<group>"; };
+		10FA4E942F0CD8B0002280AB /* MoodCalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCalenderView.swift; sourceTree = "<group>"; };
+		10FA4E952F0CD8BC002280AB /* WidgetDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataView.swift; sourceTree = "<group>"; };
+		10FA4E962F0CD96B002280AB /* ActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
+		10FA4E972F0CD9AC002280AB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		10FA4E982F0CD9B8002280AB /* DatapersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatapersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		10FA4E8F2F0CB772002280AB /* Exceptions for "Pulse" folder in "Pulse" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 10FA4E672F0C80E1002280AB /* Pulse */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		10FA4E6A2F0C80E1002280AB /* Pulse */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				10FA4E8F2F0CB772002280AB /* Exceptions for "Pulse" folder in "Pulse" target */,
+			);
 			path = Pulse;
 			sourceTree = "<group>";
 		};
@@ -63,6 +84,8 @@
 		10FA4E772F0C933E002280AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				10FA4E912F0CCC79002280AB /* UserSettings.swift */,
+				10FA4E902F0CCC6F002280AB /* MoodScore.swift */,
 				10FA4E802F0CA39B002280AB /* SleepEntry.swift */,
 				10FA4E7F2F0CA1C6002280AB /* MoodEntry.swift */,
 			);
@@ -72,6 +95,8 @@
 		10FA4E792F0C93A2002280AB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				10FA4E932F0CCCA3002280AB /* WidgetDataViewModel.swift */,
+				10FA4E922F0CCC8A002280AB /* MoodScoreViewModel.swift */,
 				10FA4E842F0CA9C7002280AB /* SleepViewModel.swift */,
 				10FA4E812F0CA87D002280AB /* MoodViewModel.swift */,
 			);
@@ -81,6 +106,8 @@
 		10FA4E7B2F0C93C1002280AB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				10FA4E952F0CD8BC002280AB /* WidgetDataView.swift */,
+				10FA4E942F0CD8B0002280AB /* MoodCalenderView.swift */,
 				10FA4E8A2F0CAAE8002280AB /* SleepLogView.swift */,
 				10FA4E892F0CAADB002280AB /* MoodLogView.swift */,
 				10FA4E882F0CA9FC002280AB /* HomeView.swift */,
@@ -100,7 +127,9 @@
 		10FA4E7D2F0C93DA002280AB /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				10FA4E8D2F0CAB04002280AB /* DataService.swift */,
+				10FA4E982F0CD9B8002280AB /* DatapersistenceManager.swift */,
+				10FA4E972F0CD9AC002280AB /* LocationManager.swift */,
+				10FA4E962F0CD96B002280AB /* ActivityManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -313,6 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pulse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pulse/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
